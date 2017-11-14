@@ -2,3 +2,82 @@
 // Then import those files here. 
 // This scss file will be compiled to index.css.
 // index.css is imported in index.js and will apply styles to everything.
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.title {
+	margin-top: 30px;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 30px;
+	color: #424242;
+}
+
+.album__grid {
+	margin: auto;
+	max-width: 1200px;
+	.grid__photo {
+		width: 33%;
+		height: 350px;
+		display: inline-block;
+		margin-bottom: 70px;
+		padding: 25px;
+		vertical-align: top;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		img:hover {
+			opacity: 0.5;
+			transition: 0.5s;
+			cursor: pointer;
+		}
+
+		.label {
+			font-family: 'Source Sans Pro', sans-serif;
+			// text-align: center;
+			border-bottom: 2.5px solid #424242;
+			padding-top: 11px;
+			padding-bottom: 7px;
+			font-size: 20px;
+			color: #424242;
+		}
+	}
+	
+}
+
+.gallery__grid {
+	margin: auto;
+	max-width: 1200px;
+	margin-top: 10px;
+	.grid__photo {
+		width: 33%;
+		height: 275px;
+		display: inline-block;
+		padding: 20px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			// margin-left: 15px;
+			// margin-right: 15px;
+			vertical-align: top;
+		}
+
+		img:hover {
+			opacity: 0.5;
+			transition: 0.5s;
+			cursor: pointer;
+		}
+	}
+}
