@@ -1,0 +1,74 @@
+.officers p {
+  font-size: 0.9em; }
+
+.officers h2 {
+  text-align: center; }
+
+.officers .officer {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 40px; }
+  .officers .officer:last-child {
+    margin: 0; }
+  .officers .officer .officer__img-container {
+    box-sizing: border-box;
+    padding: 20px; }
+    .officers .officer .officer__img-container img {
+      width: 100%; }
+  .officers .officer .officer__body-container {
+    box-sizing: border-box;
+    padding: 20px; }
+    .officers .officer .officer__body-container .body .body__title {
+      font-size: 1.2em;
+      text-transform: uppercase;
+      margin: 0; }
+    .officers .officer .officer__body-container .body .body__sub-title {
+      margin-top: 10px;
+      margin-bottom: 25px;
+      color: #a8a8a8;
+      text-transform: uppercase; }
+    .officers .officer .officer__body-container .body .body__text p {
+      line-height: 24px; }
+
+@media screen and (max-width: 530px) {
+  .officers .officer {
+    margin-bottom: 10px; }
+    .officers .officer .officer__img-container {
+      width: 100%; }
+    .officers .officer .officer__body-container {
+      width: 100%; } }
+
+@media screen and (min-width: 530px) {
+  .officers .officer {
+    display: flex;
+    flex-direction: row; }
+    .officers .officer .officer__img-container {
+      width: 50%; }
+      .officers .officer .officer__img-container--left {
+        order: 1; }
+      .officers .officer .officer__img-container--right {
+        order: 2; }
+    .officers .officer .officer__body-container {
+      width: 50%; }
+      .officers .officer .officer__body-container--left {
+        order: 2; }
+      .officers .officer .officer__body-container--right {
+        order: 1; } }
+
+@media screen and (min-width: 650px) {
+  .officers .officer .officer__img-container {
+    width: 40%; }
+  .officers .officer .officer__body-container {
+    width: 60%; } }
+
+@media screen and (min-width: 810px) {
+  .officers .officer .officer__img-container {
+    width: 30%; }
+  .officers .officer .officer__body-container {
+    width: 70%; } }
+
+@media screen and (min-width: 1060px) {
+  .officers .officer .officer__img-container {
+    width: 25%; }
+  .officers .officer .officer__body-container {
+    width: 75%; } }

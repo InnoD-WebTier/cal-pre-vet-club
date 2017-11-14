@@ -1,0 +1,138 @@
+$mobile-break: 768px;
+
+.officers {
+  p {
+    font-size: 0.9em;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .officer {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    .officer__img-container {
+      box-sizing: border-box;
+      padding: 20px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .officer__body-container {
+      box-sizing: border-box;
+      padding: 20px;
+
+      .body {
+        .body__title {
+          font-size: 1.2em;
+          text-transform: uppercase;
+          margin: 0;
+        }
+
+        .body__sub-title {
+          margin-top: 10px;
+          margin-bottom: 25px;
+          color: #a8a8a8;
+          text-transform: uppercase;
+        }
+
+        .body__text {
+          p {
+            line-height: 24px;
+          }
+        }
+      }
+    }
+
+  }
+
+  @media screen and (max-width: 530px) {
+    .officer {
+      margin-bottom: 10px;
+
+      .officer__img-container {
+        width: 100%
+      }
+
+      .officer__body-container {
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 530px) {
+    .officer {
+      display: flex;
+      flex-direction: row;
+
+      .officer__img-container {
+        width: 50%;
+
+        &--left {
+          order: 1;
+        }
+
+        &--right {
+          order: 2;
+        }
+      }
+
+      .officer__body-container {
+        width: 50%;
+
+        &--left {
+          order: 2;
+        }
+
+        &--right {
+          order: 1;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 650px) {
+    .officer {
+      .officer__img-container {
+        width: 40%
+      }
+
+      .officer__body-container {
+        width: 60%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 810px) {
+    .officer {
+      .officer__img-container {
+        width: 30%
+      }
+
+      .officer__body-container {
+        width: 70%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1060px) {
+    .officer {
+      .officer__img-container {
+        width: 25%
+      }
+
+      .officer__body-container {
+        width: 75%;
+      }
+    }
+  }
+}
