@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Grid from '../Grid.js';
-import '../styles/Events.css';
+import '../styles/css/Events.css';
 
 const items = [
 	{ name: 'First General Meeting', url: 'http://www.dogbreedslist.info/uploads/allimg/dog-pictures/Samoyed-2.jpg' },

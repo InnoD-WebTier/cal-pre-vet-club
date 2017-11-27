@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Grid from '../Grid.js';
-import '../styles/Gallery.css';
+import '../styles/css/Gallery.css';
 
 const items = [
 	{ url: 'http://www.dogbreedslist.info/uploads/allimg/dog-pictures/Samoyed-2.jpg' },

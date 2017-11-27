@@ -9,6 +9,14 @@ body {
 	padding: 0;
 }
 
+.title {
+	margin-top: 30px;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 30px;
+	color: #424242;
+}
+
 .album__grid {
 	margin: auto;
 	max-width: 1200px;
@@ -23,6 +31,8 @@ body {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+			// display: block;
+			max-width: 100%;
 		}
 
 		img:hover {
@@ -42,4 +52,12 @@ body {
 		}
 	}
 	
+}
+
+@media (max-width: 900px) {
+	.album__grid {
+		.grid__photo {
+			width: 50%;
+		}
+	}
 }
