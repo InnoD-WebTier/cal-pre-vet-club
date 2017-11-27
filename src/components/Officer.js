@@ -11,8 +11,16 @@ class Officer extends Component {
         </div>
         <div className={"officer__body-container officer__body-container--" + this.props.ordering} ref="bodyContainer">
           <div className="body">
-            <p className="body__title">{this.props.officer.name} - {this.props.officer.position}</p>
-            <p className="body__sub-title">{this.props.officer.year} - {this.props.officer.major}</p>
+            <p className="body__title">
+              <span className="body__name">{this.props.officer.name + " "}</span>
+              &bull;
+              <span className="body__position">{" " + this.props.officer.position}</span>
+             </p>
+            <p className="body__sub-title">
+              <span className="body__year">{this.props.officer.year + " "}</span>
+              &bull;
+              <span>{" " + this.props.officer.major}</span>
+            </p>
             <div className="body__text">
               {this.props.officer.bio}
             </div>

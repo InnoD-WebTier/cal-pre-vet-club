@@ -1,8 +1,9 @@
 $mobile-break: 768px;
 
 .officers {
+  padding: 0 50px;
   p {
-    font-size: 0.9em;
+   font-size: 0.9em;
   }
 
   h2 {
@@ -36,13 +37,24 @@ $mobile-break: 768px;
           font-size: 1.2em;
           text-transform: uppercase;
           margin: 0;
+
+          .body__name {
+            font-weight: bold;
+          }
+
+          .body__position {
+            font-style: italic;
+          }
         }
 
         .body__sub-title {
           margin-top: 10px;
           margin-bottom: 25px;
           color: #a8a8a8;
-          text-transform: uppercase;
+
+          .body__year {
+            text-transform: uppercase;
+          }
         }
 
         .body__text {
@@ -100,10 +112,22 @@ $mobile-break: 768px;
     }
   }
 
-  @media screen and (min-width: 650px) {
+  @media screen and (min-width: 700px) {
     .officer {
       .officer__img-container {
-        width: 40%
+        width: 55%;
+      }
+
+      .officer__body-container {
+        width: 45%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 810px) {
+    .officer {
+      .officer__img-container {
+        width: 40%;
       }
 
       .officer__body-container {
@@ -112,26 +136,14 @@ $mobile-break: 768px;
     }
   }
 
-  @media screen and (min-width: 810px) {
+  @media screen and (min-width: 960px) {
     .officer {
       .officer__img-container {
-        width: 30%
+        width: 30%;
       }
 
       .officer__body-container {
         width: 70%;
-      }
-    }
-  }
-
-  @media screen and (min-width: 1060px) {
-    .officer {
-      .officer__img-container {
-        width: 25%
-      }
-
-      .officer__body-container {
-        width: 75%;
       }
     }
   }

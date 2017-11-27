@@ -1,0 +1,32 @@
+.Tabs{
+  position: relative;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.Tabs__Tab, .Tabs__Tab--active {
+  display: inline-block;
+  text-align: center;
+  padding: 2em;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-left: 5em;
+  padding-right: 5em;
+  background: white;
+  color: black;
+  cursor: pointer;
+
+}
+
+.Tabs__Tab:hover, .Tabs__Tab--active {
+  background: lightblue;
+  color: white;
+}
+
+.Tabs__Underline {
+  poistion: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-bottom: 3px solid lightblue;
+}

@@ -1,5 +1,12 @@
-.home-container .home-section {
-  padding: 0 100px; }
-  .home-container .home-section h3 {
-    text-transform: uppercase;
-    margin: 40px; }
+.home-container {
+  font-family: helvetica; }
+  .home-container h2 {
+    text-align: center; }
+  .home-container .home-section {
+    padding: 0 100px; }
+    .home-container .home-section h3 {
+      text-transform: uppercase;
+      margin: 40px;
+      text-align: center; }
+    .home-container .home-section p {
+      line-height: 24px; }
