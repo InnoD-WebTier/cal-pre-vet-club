@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.title {
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  color: #424242; }
+
+.gallery__grid {
+  margin: auto;
+  max-width: 1200px;
+  margin-top: 10px; }
+  .gallery__grid .grid__photo {
+    width: 33%;
+    height: 275px;
+    display: inline-block;
+    padding: 20px; }
+    .gallery__grid .grid__photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      vertical-align: top; }
+    .gallery__grid .grid__photo img:hover {
+      opacity: 0.5;
+      transition: 0.5s;
+      cursor: pointer; }
