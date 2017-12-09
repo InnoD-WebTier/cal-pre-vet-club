@@ -7,6 +7,7 @@ import Members from './pages/Members.js';
 import Officers from './pages/Officers.js';
 import Contact from './pages/Contact.js';
 import { Switch, Route } from 'react-router-dom';
+import Navbar2 from './components/navbar2.js';
 
 const Main = () => (
   <main>
@@ -25,6 +26,7 @@ class App extends Component {
     return (
       <div>
         <Navbar/>
+        <Navbar2/>
         <Main/>
       </div>
     )

@@ -26,3 +26,32 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.navText{
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;  
+  color: black;
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+}
+.navbar-default .navbar-nav > li > a {
+    color: black;
+}
+
+.logo{
+    /* width: 25%; */
+    max-width:55px;
+  cursor: pointer;
+  border: none !important;
+}
+
+.hoverBorder:hover{
+    border-bottom: 1px;
+}
+
+nav.navbar.navbar-default{
+    border-color: white;
+    background-color: white;
+}
