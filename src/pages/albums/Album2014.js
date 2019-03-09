@@ -3,28 +3,23 @@ import Carousel from '../../components/Carousel';
 import Grid from '../../components/Grid.js';
 import '../../styles/css/Albums.css';
 
-const firstGen = [
-  "https://images.unsplash.com/photo-1497752531616-c3afd9760a11?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-  "https://images.unsplash.com/uploads/14135798609283698b7f3/a1364128?auto=format&fit=crop&w=1489&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-  "https://images.unsplash.com/photo-1449087989455-465ae815dbf2?auto=format&fit=crop&w=1347&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
+const Fundraisers = [
+  "/Users/kwokcasey17/Desktop/cal-pre-vet-club/src/images/2014-2015/Fundraisers/1.jpg",
+  "/Users/kwokcasey17/Desktop/cal-pre-vet-club/src/images/2014-2015/Fundraisers/2.jpg",
+  "/Users/kwokcasey17/Desktop/cal-pre-vet-club/src/images/2014-2015/Fundraisers/3.jpg"
 ];
 
-const bigC = [
-  "https://images.unsplash.com/uploads/14135798609283698b7f3/a1364128?auto=format&fit=crop&w=1489&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-  "https://images.unsplash.com/photo-1497752531616-c3afd9760a11?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-  "https://images.unsplash.com/photo-1449087989455-465ae815dbf2?auto=format&fit=crop&w=1347&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
+const GM = [
+  "/Users/kwokcasey17/Desktop/cal-pre-vet-club/src/images/2014-2015/GM/1.jpg"
 ];
 
-const secondGen = [
-  "https://images.unsplash.com/photo-1449087989455-465ae815dbf2?auto=format&fit=crop&w=1347&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-  "https://images.unsplash.com/photo-1497752531616-c3afd9760a11?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-  "https://images.unsplash.com/uploads/14135798609283698b7f3/a1364128?auto=format&fit=crop&w=1489&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
-];
-
-const dogs = [
-  "https://images.unsplash.com/photo-1497752531616-c3afd9760a11?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-  "https://images.unsplash.com/uploads/14135798609283698b7f3/a1364128?auto=format&fit=crop&w=1489&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-  "https://images.unsplash.com/photo-1449087989455-465ae815dbf2?auto=format&fit=crop&w=1347&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
+const Social = [
+  "/Users/kwokcasey17/Desktop/cal-pre-vet-club/src/images/2014-2015/Social/1.jpg",
+  "/Users/kwokcasey17/Desktop/cal-pre-vet-club/src/images/2014-2015/Social/2.jpg",
+  "/Users/kwokcasey17/Desktop/cal-pre-vet-club/src/images/2014-2015/Social/3.jpg",
+  "/Users/kwokcasey17/Desktop/cal-pre-vet-club/src/images/2014-2015/Social/4.jpg",
+  "/Users/kwokcasey17/Desktop/cal-pre-vet-club/src/images/2014-2015/Social/5.jpg",
+  "/Users/kwokcasey17/Desktop/cal-pre-vet-club/src/images/2014-2015/Social/6.jpg"
 ];
 
 
@@ -38,17 +33,14 @@ class Album2014 extends Component {
       <div class="album__container">
         <div class="title">2014 - 2015</div>
 
-        <div class="album__title">First General Meeting</div>
-        <Carousel slides={firstGen} showArrows={true} showIndicators={false} />
+        <div class="album__title">Fundraisers</div>
+        <Carousel slides={Fundraisers} showArrows={true} showIndicators={false} />
 
-        <div class="album__title">Big C Hike + Pieology Social</div>
-        <Carousel slides={bigC} showArrows={true} showIndicators={false} /> 
+        <div class="album__title">GM</div>
+        <Carousel slides={GM} showArrows={true} showIndicators={false} /> 
 
-        <div class="album__title">2nd General Meeting</div>
-        <Carousel slides={secondGen} showArrows={true} showIndicators={false} /> 
-
-        <div class="album__title">Guide Dogs for the Blind Field Trip</div>
-        <Carousel slides={dogs} showArrows={true} showIndicators={false} /> 
+        <div class="album__title">Social</div>
+        <Carousel slides={Social} showArrows={true} showIndicators={false} /> 
       </div>
     )
   }

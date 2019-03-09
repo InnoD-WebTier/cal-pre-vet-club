@@ -3,28 +3,31 @@ import Carousel from '../../components/Carousel';
 import Grid from '../../components/Grid.js';
 import '../../styles/css/Albums.css';
 
-const firstGen = [
-  "https://images.unsplash.com/photo-1497752531616-c3afd9760a11?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-  "https://images.unsplash.com/uploads/14135798609283698b7f3/a1364128?auto=format&fit=crop&w=1489&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-  "https://images.unsplash.com/photo-1449087989455-465ae815dbf2?auto=format&fit=crop&w=1347&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
+const FundraiserConcert = [
+  "../images/2017-2018/Fundraiser-Concert/1.jpg",
+  "../images/2017-2018/Fundraiser-Concert/2.jpg",
+  "../images/2017-2018/Fundraiser-Concert/3.jpg",
+  "../images/2017-2018/Fundraiser-Concert/4.jpg",
+  "../images/2017-2018/Fundraiser-Concert/5.jpg",
+  "../images/2017-2018/Fundraiser-Concert/6.jpg",
+  "../images/2017-2018/Fundraiser-Concert/7.jpg",
+  "../images/2017-2018/Fundraiser-Concert/8.jpg",
+  "../images/2017-2018/Fundraiser-Concert/9.jpg"
 ];
 
-const bigC = [
-  "https://images.unsplash.com/uploads/14135798609283698b7f3/a1364128?auto=format&fit=crop&w=1489&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-  "https://images.unsplash.com/photo-1497752531616-c3afd9760a11?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-  "https://images.unsplash.com/photo-1449087989455-465ae815dbf2?auto=format&fit=crop&w=1347&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
+const GM = [
+  "../images/2017-2018/GM/1.jpg",
+  "../images/2017-2018/GM/2.jpg",
+  "../images/2017-2018/GM/3.jpg",
+  "../images/2017-2018/GM/4.jpg",
+  "../images/2017-2018/GM/5.jpg",
+  "../images/2017-2018/GM/6.jpg",
+  "../images/2017-2018/GM/7.jpg",
+  "../images/2017-2018/GM/8.jpg"
 ];
 
-const secondGen = [
-  "https://images.unsplash.com/photo-1449087989455-465ae815dbf2?auto=format&fit=crop&w=1347&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-  "https://images.unsplash.com/photo-1497752531616-c3afd9760a11?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-  "https://images.unsplash.com/uploads/14135798609283698b7f3/a1364128?auto=format&fit=crop&w=1489&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
-];
-
-const dogs = [
-  "https://images.unsplash.com/photo-1497752531616-c3afd9760a11?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-  "https://images.unsplash.com/uploads/14135798609283698b7f3/a1364128?auto=format&fit=crop&w=1489&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D",
-  "https://images.unsplash.com/photo-1449087989455-465ae815dbf2?auto=format&fit=crop&w=1347&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
+const Officers = [
+  "../images/2017-2018/Officers/Officers.jpg"
 ];
 
 
@@ -38,17 +41,14 @@ class Album2017 extends Component {
       <div class="album__container">
         <div class="title">2017 - 2018</div>
 
-        <div class="album__title">First General Meeting</div>
-        <Carousel slides={firstGen} showArrows={true} showIndicators={false} />
+        <div class="album__title">Fundraiser Concert</div>
+        <Carousel slides={FundraiserConcert} showArrows={true} showIndicators={false} />
 
-        <div class="album__title">Big C Hike + Pieology Social</div>
-        <Carousel slides={bigC} showArrows={true} showIndicators={false} /> 
+        <div class="album__title">GM</div>
+        <Carousel slides={GM} showArrows={true} showIndicators={false} />
 
-        <div class="album__title">2nd General Meeting</div>
-        <Carousel slides={secondGen} showArrows={true} showIndicators={false} /> 
-
-        <div class="album__title">Guide Dogs for the Blind Field Trip</div>
-        <Carousel slides={dogs} showArrows={true} showIndicators={false} /> 
+        <div class="album__title">Offiers</div>
+        <Carousel slides={Officers} showArrows={true} showIndicators={false} /> 
       </div>
     )
   }

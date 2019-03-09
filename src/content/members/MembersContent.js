@@ -115,7 +115,11 @@ const content = {
             defaultPageSize={5}
           />
           <p>However, take heed that prerequisites, requirements, classes, and offerings are continuously 
-          changing - never static. Some useful resources are:</p>
+          changing - never static. Some useful resources are: <br />
+          www.aavmc.org/data/files/vmcas/prereqchart.pdf <br />
+          career.berkeley.edu/Health/VetPrepCourses <br />
+          guide.berkeley.edu/courses/:</p>
+
           <p>And don’t be afraid to contact vet schools directly; they are very responsive to prospective 
           applicants and encourage questions while steering you in the right direction.</p>
           </div>,
